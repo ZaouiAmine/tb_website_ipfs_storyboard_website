@@ -1,0 +1,73 @@
+:root {
+  color-scheme: dark;
+  --bg: #0b0f17;
+  --panel: #121a28;
+  --text: #e8eefc;
+  --muted: #96a3bf;
+  --accent: #4cc9f0;
+  --border: #23324f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: radial-gradient(circle at top, #16213a 0%, var(--bg) 45%);
+  color: var(--text);
+}
+
+.shell {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px 56px;
+}
+
+.hero h1 {
+  margin: 8px 0 10px;
+  font-size: 2rem;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.lead {
+  margin: 0;
+  color: var(--muted);
+  max-width: 60ch;
+}
+
+.kpi-grid {
+  margin-top: 28px;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.card {
+  background: linear-gradient(180deg, #17233a 0%, var(--panel) 100%);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 14px 16px;
+}
+
+.card h2 {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.value {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
